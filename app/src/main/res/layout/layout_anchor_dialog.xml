@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="244dp"
+    android:layout_height="268dp"
+    android:background="@drawable/bg_dialog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="240dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <tk.thinkerzhangyan.dialogfragmentpractice.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_head" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="大萌妹匝儿嘻嘻"
+                android:visibility="visible"
+                android:textColor="#FF0B0B0B"
+                android:textSize="12sp"
+                />
+            <ImageView
+                android:layout_marginLeft="4dp"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/person_female"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+           >
+
+            <ImageView
+                android:id="@+id/iv_age"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:src="@drawable/person_age"
+                android:layout_marginRight="3dp"
+              />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="18岁"
+                android:visibility="visible"
+                android:textColor="#FF888888"
+                android:textSize="12sp"
+                android:layout_marginRight="7.5dp"
+                />
+
+            <View
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="1dp"
+                android:layout_height="8dp"
+                android:background="#FFD8D8D8" />
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:src="@drawable/person_location"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="北京"
+                android:visibility="visible"
+                android:textColor="#FF888888"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_fans_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="粉丝：2.8万"
+            android:visibility="visible"
+            android:textColor="#FF888888"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            />
+        <TextView
+            android:id="@+id/tv_host_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:textSize="12dp"
+            android:textColor="#FF888888"
+            android:text="主播公告：直播时间：上午10:00下午5:00五个飞机房管，两个十万水军微信群。qq:2233292微博：大萌妹匝儿嘻嘻   谢谢大家关注。"/>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="16dp"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_subscribe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="No"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/column_line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4" />
+
+            <Button
+                android:id="@+id/bt_homepage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Yes"
+                android:textColor="#38ADFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

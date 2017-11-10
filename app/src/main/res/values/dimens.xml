@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="letv_dimens_anchor_dialog_width">244dp</dimen>
+    <dimen name="letv_dimens_anchor_dialog_height">268dp</dimen>
+</resources>
